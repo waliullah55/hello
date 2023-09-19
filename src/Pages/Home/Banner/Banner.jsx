@@ -6,35 +6,60 @@ import './Banner.css'
 
 
 const Banner = () => {
+
     return (
         <div className="carousel w-full rounded-lg mt-2">
-            <div id="slide1" className="carousel-item relative w-full hero-overlay flex items-center justify-center">
-                <img src={image4} className="w-full bl " />
-                <div className='absolute text-white space-y-5 w-3/6 mx-auto text-center '>
-                    <h2 className='font-extrabold text-6xl'>Chicken Tikka Masala</h2>
-                    <p className='text-2xl font-semibold'> A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking. </p>
+
+            <div id="slide1" className="carousel-item relative w-full flex items-center justify-center">
+                <img src={image4} className="w-full" />
+                <div className="absolute flex justify-between transform -translate-y-1/2 right-5 top-1/2  bg-gradient-to-r from-[#333232] to-[rgba(51, 50, 50, 0)] h-full w-full ">
+                    <div className=' flex flex-col items-center justify-center text-white space-y-5 w-3/6 mx-auto text-center '>
+                        <h2 className='font-extrabold text-6xl'>Chicken Tikka Masala</h2>
+                        <p className='text-2xl font-semibold'> A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking. </p>
+                    </div>
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" className="btn btn-circle">❮</a>
                     <a href="#slide2" className="btn btn-circle">❯</a>
                 </div>
             </div>
+
             <div id="slide2" className="carousel-item relative w-full">
                 <img src={image2} className="w-full" />
+                <div className="absolute flex justify-between transform -translate-y-1/2 top-1/2  bg-gradient-to-r from-[#333232] to-[rgba(51, 50, 50, 0)] h-full w-full ">
+                    <div className=' flex flex-col items-center justify-center text-white space-y-5 w-3/6 mx-auto text-center '>
+                        <h2 className='font-extrabold text-6xl'>Chicken Tikka Masala</h2>
+                        <p className='text-2xl font-semibold'> A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking. </p>
+                    </div>
+                </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" className="btn btn-circle">❮</a>
                     <a href="#slide3" className="btn btn-circle">❯</a>
                 </div>
             </div>
+
             <div id="slide3" className="carousel-item relative w-full">
                 <img src={image3} className="w-full" />
+                <div className="absolute flex justify-between transform -translate-y-1/2 top-1/2  bg-gradient-to-r from-[#333232] to-[rgba(51, 50, 50, 0)] h-full w-full ">
+                    <div className=' flex flex-col items-center justify-center text-white space-y-5 w-3/6 mx-auto text-center '>
+                        <h2 className='font-extrabold text-6xl'>Chicken Tikka Masala</h2>
+                        <p className='text-2xl font-semibold'> A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking. </p>
+                    </div>
+                </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" className="btn btn-circle">❮</a>
                     <a href="#slide4" className="btn btn-circle">❯</a>
                 </div>
             </div>
+
             <div id="slide4" className="carousel-item relative w-full">
                 <img src={image1} className="w-full" />
+                <div className="absolute flex justify-between transform -translate-y-1/2 top-1/2  bg-gradient-to-r from-[#333232] to-[rgba(51, 50, 50, 0)] h-full w-full ">
+                    <div className=' flex flex-col items-center justify-center text-white space-y-5 w-3/6 mx-auto text-center '>
+                        <h2 className='font-extrabold text-6xl'>Chicken Tikka Masala</h2>
+                        <p className='text-2xl font-semibold'> A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking. </p>
+                    </div>
+                </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" className="btn btn-circle">❮</a>
                     <a href="#slide1" className="btn btn-circle">❯</a>

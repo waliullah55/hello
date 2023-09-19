@@ -21,7 +21,7 @@ const Category = () => {
                         key={data.id}
                         className=""
                     >
-                        <img src={data.img} className="rounded-full border-[4px] border-slate-300 p-2" alt="" />
+                        <img src={data.img} className="rounded-full border-2 border-slate-300 p-1" alt="" />
                         <h2 className="mt-4 text-center text-xl font-semibold">{data.name}</h2>
                     </div>)
                 }

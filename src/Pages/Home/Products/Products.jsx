@@ -17,7 +17,7 @@ const Products = () => {
                 subTitle={"Recent Recipes"}
                 title={"Latest Recipes"}
             ></SectionTittle>
-            <div className="flex flex-wrap gap-x-6 gap-y-6">
+            <div className="flex flex-wrap gap-x-6 gap-y-9">
                 {
                     Products.map(product => <SingleProduct
                         key={product.id}
