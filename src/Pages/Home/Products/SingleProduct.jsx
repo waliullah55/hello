@@ -22,7 +22,7 @@ const SingleProduct = ({ product }) => {
                 </div>
             </div>
             <div className="flex justify-around border-t-2">
-                <p className='flex gap-2 items-center'><AiOutlineFolderOpen  className='text-green-600 text-2lg' /><span>{product.name}</span></p>
+                <p className='flex gap-2 items-center'><AiOutlineFolderOpen  className='text-green-600 text-2lg' /><span className='hover:text-[#f89223]'>{product.name}</span></p>
                 <p className="divider h-16 text-center divider-horizontal"></p>
                 <p className='flex gap-2 items-center'><AiOutlineClockCircle className='text-green-600 text-lg'  /><span>{product.time}</span></p>
             </div>
