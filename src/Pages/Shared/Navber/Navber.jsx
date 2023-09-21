@@ -14,8 +14,8 @@ const Navber = () => {
   const navOptions = <>
     <li><Link>Home</Link></li>
     <li><Link>About</Link></li>
-    <li><Link>Service</Link></li>
-    <li><Link>Contsct</Link></li>
+    <li><Link to={"/secret"}>Secret</Link></li>
+    <li><Link>Contact</Link></li>
     {/* <button onClick={handleLogOut} className="btn btn-active btn-ghost">Log Out</button> */}
     {
       user ? <><li><Link onClick={handleLogOut}>Log Out</Link></li></> :
