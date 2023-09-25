@@ -10,7 +10,7 @@ const Products = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
             .catch(err => console.error(err))
-    }, [])
+    }, []);
     return (
         <div className="pt-4 pb-16">
             <SectionTittle

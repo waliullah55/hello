@@ -17,14 +17,9 @@ const Navber = () => {
     <li><Link to={"/secret"}>Secret</Link></li>
     <li><Link>Contact</Link></li>
     {/* <button onClick={handleLogOut} className="btn btn-active btn-ghost">Log Out</button> */}
-    {
-      user ? <><li><Link onClick={handleLogOut}>Log Out</Link></li></> :
-        <>
-          <li><Link to={"login"}>Login</Link></li>
-        </>
-    }
-  </>
 
+  </>
+// console.log(user?.auth.email);
   return (
     <>
       <Helmet>
@@ -50,7 +45,16 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <input type="text" placeholder="Search Here" className="input input-bordered w-1/2 max-w-xs" />
+
+          <div className="tooltip tooltip-open" data-tip={user}>
+            {
+              user ? <><li><Link onClick={handleLogOut}>Log Out</Link></li></> :
+                <>
+                  <li><Link to={"login"}>Login</Link></li>
+                </>
+            }
+          </div>
+
         </div>
       </div>
     </>
